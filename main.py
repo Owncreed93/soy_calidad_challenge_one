@@ -40,7 +40,7 @@ while True:
             result = product_manager.update_product(product_id, nombre or None, 
                                         float(precio) if precio else None, 
                                         int(stock) if stock else None)
-            if product_manager.delete_product(product_id):
+            if product_manager.update_product(product_id):
                 print(Fore.GREEN + '!Producto actualizado con éxito!' + Style.RESET_ALL)
             else:
                 print(Fore.RED + 'Error al actualizar, revisa los datos enviados.' + Style.RESET_ALL)

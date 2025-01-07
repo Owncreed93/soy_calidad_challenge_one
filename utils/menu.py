@@ -21,4 +21,4 @@ def show_table(data: dict):
     if data:
         print(tabulate(data, headers='keys', tablefmt='fancy_grid'))
     else:
-        print(Fore.RED + 'No hay productos registrados.' + Style.RESET_ALL)
+        print(Fore.RED + 'No hay productos registrados.' + Style.RESET_ALL, end='\n')
