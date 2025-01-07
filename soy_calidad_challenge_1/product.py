@@ -1,7 +1,7 @@
 class Product():
     """Class responsible for product's logic."""
 
-    def __init__(self, name: str, price: int, stock: int):
+    def __init__(self, name: str, price: float, stock: int):
         self._name = None  
         self._price = None
         self._stock = None
@@ -26,7 +26,7 @@ class Product():
         return self._price
 
     @price.setter
-    def price(self, value: int):
+    def price(self, value: float):
         if not isinstance(value, (int, float)) or value < 0:
             raise ValueError("El precio debe ser un número positivo.")
         self._price = value
