@@ -31,7 +31,7 @@ else:
 
 #         if opcion == 1:
 #             nombre = input("Nombre del producto: ")
-#             precio = int(input("Precio del producto: "))
+#             precio = float(input("Precio del producto: "))
 #             stock = int(input("Cantidad en stock: "))
 #             product_manager.create_product(nombre, precio, stock)
 #             print(Fore.GREEN + "Producto creado con éxito!" + Style.RESET_ALL)

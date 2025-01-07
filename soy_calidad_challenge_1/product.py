@@ -27,7 +27,7 @@ class Product():
 
     @price.setter
     def price(self, value: int):
-        if not isinstance(value, int) or value < 0:
+        if not isinstance(value, (int, float)) or value < 0:
             raise ValueError("El precio debe ser un número positivo.")
         self._price = value
     
